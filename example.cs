@@ -19,7 +19,7 @@ private System.Data.DataSet ExecuteScript(string scriptPath)
 			if (currLine.Equals("GO", StringComparison.OrdinalIgnoreCase))
 			{
 				FillDataset(sb.ToString(), conn, ds);
-				sb.Remove(0, sb.Length);
+				sb.Clear();
 			}
 			else
 			{
